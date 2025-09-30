@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body bgcolor="khaki">
+
+    <header>
+        <nav align="center">
+            <a href="./formulirPendaftaran.html">Formulir Pendaftaran</a> | 
+            <a href="./dataPeserta.html">Data Peserta</a>
+        </nav>
+        <hr>
+        <h1 align="center"><font color="pink">Formulir Pendaftaran</font></h1>
+    </header>
+
+    <main>
+        <form method="post" action="#">
+            <section>
+                <fieldset>
+                    <legend><font color="pink"><b>Data Diri</b></font></legend>
+                    <table border="0" width="100%" cellpadding="8" cellspacing="0" bgcolor="mediumpurple">
+                        <tr>
+                            <td width="25%">
+                                <label for="nama">Nama:</label><br>
+                                <input type="text" id="nama" name="nama">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Jenis Kelamin</label><br>
+                                <input type="radio" name="jk" value="Laki-laki"> Laki-Laki
+                                <input type="radio" name="jk" value="Perempuan"> Perempuan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="agama">Agama</label><br>
+                                <select id="agama" name="agama">
+                                    <optgroup label="Agama Mayoritas">
+                                        <option>Islam</option>
+                                        <option>Kristen</option>
+                                        <option>Katolik</option>
+                                    </optgroup>
+                                    <optgroup label="Agama Lain">
+                                        <option>Hindu</option>
+                                        <option>Budha</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="notelp">No. Telepon</label><br>
+                                <input type="tel" id="notelp" name="notelp">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email</label><br>
+                                <input type="email" id="email" name="email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="alamat">Alamat</label><br>
+                                <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend><font color="pink"><b>Pendidikan</b></font></legend>
+                    <table border="0" width="100%" cellpadding="8" cellspacing="0" bgcolor="mistyrose">
+                        <tr>
+                            <td>
+                                <label for="namaSD">SD</label><br>
+                                <input type="text" id="namaSD" name="namaSD">
+                            </td>
+                            <td>
+                                Masuk <input type="date" name="sdMasuk">
+                                &nbsp; Keluar <input type="date" name="sdKeluar">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="namaSMP">SMP</label><br>
+                                <input type="text" id="namaSMP" name="namaSMP">
+                            </td>
+                            <td>
+                                Masuk <input type="date" name="smpMasuk">
+                                &nbsp; Keluar <input type="date" name="smpKeluar">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="namaSMA">SMA</label><br>
+                                <input type="text" id="namaSMA" name="namaSMA">
+                            </td>
+                            <td>
+                                Masuk <input type="date" name="smaMasuk">
+                                &nbsp; Keluar <input type="date" name="smaKeluar">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+
+            <table width="100%" height="30" bgcolor="white" cellpadding="0" cellspacing="0">
+                <tr><td></td></tr>
+            </table>
+
+            <section>
+                <fieldset>
+                    <legend><font color="pink"><b>Pelatihan</b></font></legend>
+                    <table border="0" width="100%" cellpadding="8" cellspacing="0" bgcolor="mediumpurple">
+                        <tr>
+                            <td>
+                                Minat<br>
+                                <input type="checkbox" name="minat[]" value="HTML"> HTML
+                                <input type="checkbox" name="minat[]" value="CSS"> CSS
+                                <input type="checkbox" name="minat[]" value="JavaScript"> JavaScript
+                                <input type="checkbox" name="minat[]" value="PHP"> PHP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Kompetensi<br>
+                                <input type="checkbox" name="kompetensi[]" value="HTML"> HTML
+                                <input type="checkbox" name="kompetensi[]" value="CSS"> CSS
+                                <input type="checkbox" name="kompetensi[]" value="JavaScript"> JavaScript
+                                <input type="checkbox" name="kompetensi[]" value="PHP"> PHP
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend><font color="pink"><b>Pilih Jurusan</b></font></legend>
+                    <table border="0" width="100%" cellpadding="8" cellspacing="0" bgcolor="mistyrose">
+                        <tr>
+                            <td>
+                                <select name="jurusan">
+                                    <option>Rekayasa Perangkat Lunak</option>
+                                    <option>Teknik Komputer dan Jaringan</option>
+                                    <option>Multimedia</option>
+                                    <option>Bisnis Daring dan Pemasaran</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+
+            <footer align="left">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </footer>
+        </form>
+    </main>
+
+</body>
+</html>
